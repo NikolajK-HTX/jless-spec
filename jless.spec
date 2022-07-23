@@ -3,15 +3,15 @@
 
 %global crate jless
 
-Name:           %{crate}
+Name:           jless
 Version:        0.8.0
-Release:        %autorelease
+Release:        1%{?dist}
 Summary:        Command-line JSON viewer
 
 # Upstream license specification: MIT
 License:        MIT
 URL:            https://crates.io/crates/jless
-Source:         %{crates_source}
+Source:         https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v0.8.0.tar.gz
 
 ExclusiveArch:  %{rust_arches}
 
@@ -22,10 +22,7 @@ Command-line JSON viewer.}
 
 %description %{_description}
 
-%package     -n %{crate}
 Summary:        %{summary}
-
-%description -n %{crate} %{_description}
 
 %files       -n %{crate}
 %license LICENSE

@@ -10,6 +10,8 @@ License: MIT
 URL:     https://github.com/PaulJuliusMartinez/jless
 Source0: %{url}/archive/v%{version}.tar.gz
 
+BuildRequires: gcc
+
 %description
 jless is a command-line JSON viewer designed for reading, 
 exploring, and searching through JSON data. 

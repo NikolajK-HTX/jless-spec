@@ -11,6 +11,8 @@ URL:     https://github.com/PaulJuliusMartinez/jless
 Source0: %{url}/archive/v%{version}.tar.gz
 
 BuildRequires: gcc
+BuildRequires: python3
+BuildRequires: libxcb-devel
 
 %description
 jless is a command-line JSON viewer designed for reading, 
